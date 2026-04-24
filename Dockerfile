@@ -15,6 +15,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 FROM base AS app
 
 COPY src/       ./src/
+COPY app/       ./app/
 COPY data/      ./data/
 COPY notebooks/ ./notebooks/
 COPY tests/     ./tests/

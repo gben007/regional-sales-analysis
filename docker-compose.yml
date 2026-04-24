@@ -10,6 +10,18 @@ services:
     environment:
       - PYTHONPATH=/app
 
+  dashboard:
+    build: .
+    command: streamlit run app/main.py --server.port=8501 --server.address=0.0.0.0
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - PYTHONPATH=/app
+    profiles:
+      - dashboard
+
   test:
     build: .
     command: python -m pytest --tb=short -q
