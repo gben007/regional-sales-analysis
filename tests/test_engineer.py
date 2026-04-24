@@ -1,6 +1,5 @@
 """Tests for src.features.engineer — derived column correctness."""
 import pandas as pd
-import numpy as np
 
 NEW_COLUMNS = [
     "total_cost", "profit", "profit_margin_pct",

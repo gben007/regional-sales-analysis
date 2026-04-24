@@ -52,7 +52,6 @@ class TestBuildMaster:
         assert year_2017["budget"].notna().any(), "At least some 2017 orders should have a budget"
 
     def test_order_date_dtype(self, clean_df):
-        import pandas as pd
         assert clean_df["order_date"].dtype == "datetime64[ns]"
 
     def test_date_range(self, clean_df):

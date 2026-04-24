@@ -1,5 +1,7 @@
 # USA Regional Sales Analysis
 
+[![CI](https://github.com/gben007/regional-sales-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/gben007/regional-sales-analysis/actions/workflows/ci.yml)
+
 End-to-end exploratory data analysis of Acme Co.'s 2014–2018 USA sales data across products, channels, and regions.
 
 ## Project Summary
