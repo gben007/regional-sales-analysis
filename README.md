@@ -1,6 +1,7 @@
 # USA Regional Sales Analysis
 
 [![CI](https://github.com/gben007/regional-sales-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/gben007/regional-sales-analysis/actions/workflows/ci.yml)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://regional-sales-analysis.streamlit.app)
 
 End-to-end exploratory data analysis of Acme Co.'s 2014–2018 USA sales data across products, channels, and regions.
 
@@ -49,7 +50,12 @@ This project analyses 64,000+ sales orders to identify revenue drivers, seasonal
 
 ## Getting Started
 
-### Option A — Docker (recommended, zero setup)
+### Option A — Live (no install)
+
+The dashboard is deployed on Streamlit Community Cloud:
+**https://regional-sales-analysis.streamlit.app**
+
+### Option C — Docker
 
 Requires [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 
@@ -69,7 +75,7 @@ docker compose --profile test run --rm test
 
 Notebooks and data are volume-mounted — edits persist on your machine.
 
-### Option B — Local Python
+### Option D — Local Python
 
 ```bash
 git clone https://github.com/gben007/regional-sales-analysis.git
