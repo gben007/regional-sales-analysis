@@ -1,0 +1,19 @@
+services:
+  jupyter:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      # Live-reload notebooks and data from host — edits persist outside the container
+      - ./notebooks:/app/notebooks
+      - ./data:/app/data
+    environment:
+      - PYTHONPATH=/app
+
+  test:
+    build: .
+    command: python -m pytest --tb=short -q
+    environment:
+      - PYTHONPATH=/app
+    profiles:
+      - test
